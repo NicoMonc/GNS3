@@ -1,0 +1,26 @@
+PC1:
+ip 10.20.0.1/22 10.20.3.254
+show ip
+save
+
+PC2:
+ip 10.30.0.1/22 10.30.3.254
+show ip
+save
+
+PC3:
+ip 10.40.0.1/22 10.40.3.254
+show ip
+save
+
+PC4:
+ip 10.50.0.1/22 10.50.3.254
+show ip
+save
+
+Web:
+auto eth0
+iface eth0 inet static
+	address 10.30.0.2
+	netmask 255.255.252.0
+	gateway 10.30.3.254
