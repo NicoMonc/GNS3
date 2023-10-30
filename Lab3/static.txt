@@ -1,0 +1,11 @@
+Router1:
+ip route print
+ip route add dst-address=10.11.12.0/24 gateway=192.168.0.253
+ip route add dst-address=10.11.13.0/24 gateway=192.168.0.253
+ip route print
+
+Router2:
+ip route print
+ip route add dst-address=172.16.10.0/24 gateway=192.168.0.254
+ip route add dst-address=172.16.20.0/24 gateway=192.168.0.254
+ip route print

@@ -1,0 +1,17 @@
+Router 1:
+ip address add address=176.16.10.254/24 interface=ether1
+ip address add address=176.16.20.254/24 interface=ether2
+ip address add address=192.168.0.254/24 interface=ether3
+ip address print
+system identity print
+system identity set name=router1
+system identity print
+
+Router 2:
+ip address add address=192.168.0.253/22 interface=ether1
+ip address add address=10.11.12.254/24 interface=ether2
+ip address add address=10.11.13.254/24 interface=ether3
+ip address print
+system identity print
+system identity set name=router2
+system identity print
