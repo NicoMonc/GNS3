@@ -1,6 +1,6 @@
 Router 1:
-ip address add address=176.16.10.254/24 interface=ether1
-ip address add address=176.16.20.254/24 interface=ether2
+ip address add address=172.16.10.254/24 interface=ether1
+ip address add address=172.16.20.254/24 interface=ether2
 ip address add address=192.168.0.254/24 interface=ether3
 ip address print
 system identity print
